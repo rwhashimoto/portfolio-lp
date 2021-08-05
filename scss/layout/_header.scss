@@ -1,0 +1,32 @@
+.l-header {
+    margin: 0 auto;
+    min-height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-wrapper{//l-header-wrapper
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+        padding:  0 70px;
+    }
+    &-logo {//l-header-logo
+        width: 120px;
+    }
+    &-menu {//l-header-menu
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 315px;
+        color: $font-color;
+        &-item {
+            figure{
+                width: 20px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

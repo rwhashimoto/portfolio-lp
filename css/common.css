@@ -1,4 +1,12 @@
 @charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 /*!
  * ress.css • v4.0.0
  * MIT License
@@ -327,6 +335,37 @@ html {
 p,
 a {
   font-size: 1.4rem;
+}
+
+.l-header {
+  margin: 0 auto;
+  min-height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  padding: 0 70px;
+}
+.l-header-logo {
+  width: 120px;
+}
+.l-header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 315px;
+  color: #333333;
+}
+.l-header-menu-item figure {
+  width: 20px;
+}
+.l-header-menu-item figure img {
+  width: 100%;
+  height: auto;
 }
 
 .l-main p {
