@@ -369,6 +369,16 @@ a {
   height: auto;
 }
 
+.l-footer-wrapper {
+  margin: 130px 0 0;
+  padding: 10px 0;
+  background-color: #24292E;
+}
+.l-footer-wrapper p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
 
 .l-main-wrapper {
   max-width: 960px;
