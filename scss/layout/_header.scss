@@ -1,9 +1,10 @@
 .l-header {
-    margin: 0 auto;
-    min-height: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 960px;
+    min-height: 270px;
+    margin: 0 auto;
     &-wrapper{//l-header-wrapper
         display: flex;
         justify-content: space-between;
