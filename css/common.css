@@ -338,11 +338,12 @@ a {
 }
 
 .l-header {
-  margin: 0 auto;
-  min-height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 960px;
+  min-height: 270px;
+  margin: 0 auto;
 }
 .l-header-wrapper {
   display: flex;
@@ -366,6 +367,17 @@ a {
 .l-header-menu-item figure img {
   width: 100%;
   height: auto;
+}
+
+.l-footer-wrapper {
+  margin: 130px 0 0;
+  padding: 10px 0;
+  background-color: #24292E;
+}
+.l-footer-wrapper p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .l-main p {
