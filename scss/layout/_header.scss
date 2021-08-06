@@ -13,6 +13,9 @@
     }
     &-logo {//l-header-logo
         width: 120px;
+        &:hover{
+            opacity: 0.5;
+        }
     }
     &-menu {//l-header-menu
         display: flex;
@@ -26,6 +29,12 @@
                 img{
                     width: 100%;
                     height: auto;
+                }
+            }
+            a{
+                color: $main-color;
+                &:hover{
+                    opacity: 0.5;
                 }
             }
         }
