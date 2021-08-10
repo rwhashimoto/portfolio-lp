@@ -114,6 +114,9 @@
             display: flex;
             justify-content: space-between;
             margin: 0 0 15px;
+            &:last-of-type {
+                margin: 0 0 30px;
+            }
             @include media-sp{
                 flex-direction: column;
             }
@@ -128,6 +131,15 @@
                     width: 100%;
                 }
             }
+        }
+        .btn-submit {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            padding: 15px 0;
+            background-color: $main-color;
+            color: $base-color;
+            font-size: 1.4rem;
         }
     }
 
