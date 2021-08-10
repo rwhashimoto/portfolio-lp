@@ -508,13 +508,6 @@ a {
 @media screen and (max-width: 768px) {
   .l-main-works-item {
     width: 100%;
-    height: 225px;
-  }
-  .l-main-works-item img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 .l-main-works-item img {
