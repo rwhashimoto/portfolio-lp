@@ -1,4 +1,4 @@
-$break-points: 768px;
+$break-points: 600px;
 
 @mixin media-sp {
     @media screen and (max-width: $break-points) {
