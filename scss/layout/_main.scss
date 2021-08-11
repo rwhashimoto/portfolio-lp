@@ -1,9 +1,4 @@
 .l-main {
-    overflow: hidden;
-    &-wrapper {//l-main-wrapper
-        max-width: 960px;
-        margin: 0 auto;
-    }
     &-mv {//l-main-mv
         margin: 0 calc(50% - 50vw);
         width: 100vw;
@@ -26,14 +21,16 @@
         }
     }
     &-content {//l-main-content
-        margin: 130px 60px 0;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 130px 60px 0;
         &:first-of-type{
-            margin: 80px 60px 0;
+            padding: 80px 60px 0;
         }
         @include media-sp{
-            margin: 70px 15px 0;
+            padding: 70px 15px 0;
             &:first-of-type{
-                margin: 80px 15px 0;
+                padding: 80px 15px 0;
             }
         }
     }
