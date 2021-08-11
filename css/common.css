@@ -339,62 +339,58 @@ a {
 
 .l-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: 960px;
   min-height: 270px;
   margin: 0 auto;
+  padding: 0 70px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-header {
+    flex-direction: column;
+    justify-content: center;
     min-height: 100px;
   }
 }
-.l-header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 960px;
-  padding: 0 70px;
+.l-header-logo img {
+  max-width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .l-header-wrapper {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
+.l-header-logo a {
+  display: block;
 }
-.l-header-logo {
-  width: 120px;
-}
-.l-header-logo:hover {
-  opacity: 0.5;
-}
-.l-header-menu {
+.l-header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 315px;
 }
-.l-header-menu-item figure {
+@media screen and (max-width: 600px) {
+  .l-header-items {
+    width: 258px;
+  }
+}
+.l-header-item.ico-sns {
   width: 20px;
 }
-.l-header-menu-item figure img {
-  width: 100%;
+.l-header-item.ico-sns img {
+  max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 768px) {
-  .l-header-menu-item figure img {
+@media screen and (max-width: 600px) {
+  .l-header-item.ico-sns img {
     font-size: 1.2rem;
   }
 }
-.l-header-menu-item a {
+.l-header-item a {
   color: #24292E;
+  transition: all ease-in-out 0.3s;
 }
-.l-header-menu-item a:hover {
+.l-header-item a:hover {
   opacity: 0.5;
 }
-@media screen and (max-width: 768px) {
-  .l-header-menu-item a {
+@media screen and (max-width: 600px) {
+  .l-header-item a {
     font-size: 1.2rem;
   }
 }
@@ -404,7 +400,7 @@ a {
   padding: 10px 0;
   background-color: #24292E;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-footer-wrapper {
     margin: 70px 0 0;
   }
@@ -436,7 +432,7 @@ a {
 .l-main-mv-sp {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-mv-pc {
     display: none;
   }
@@ -450,7 +446,7 @@ a {
 .l-main-content:first-of-type {
   margin: 80px 60px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-content {
     margin: 70px 15px 0;
   }
@@ -464,7 +460,7 @@ a {
   color: #24292E;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-title {
     padding: 0 0 40px;
   }
@@ -473,7 +469,7 @@ a {
   padding: 30px 0 0;
   font-size: 1.4rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-about .information {
     padding: 30px 0 0;
   }
@@ -484,7 +480,7 @@ a {
 .l-main-about .profile {
   padding: 30px 0 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-about .profile {
     padding: 30px 0 0;
   }
@@ -495,7 +491,7 @@ a {
   justify-content: space-between;
   gap: 18px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-works {
     flex-wrap: nowrap;
     flex-direction: column;
@@ -505,7 +501,7 @@ a {
 .l-main-works-item {
   width: 31.5%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-works-item {
     width: 100%;
   }
@@ -522,7 +518,7 @@ a {
 .l-main-news dl:first-of-type {
   border-top: solid 1.5px #C8C8C8;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-news dl {
     flex-direction: column;
   }
@@ -534,7 +530,7 @@ a {
 .l-main-news dl dd {
   font-size: 1.4rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-news dl dd {
     padding: 0 0 0 14px;
   }
@@ -547,7 +543,7 @@ a {
 .l-main-contact-item:last-of-type {
   margin: 0 0 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-contact-item {
     flex-direction: column;
   }
@@ -559,7 +555,7 @@ a {
   border: solid 1.5px #C8C8C8;
   resize: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-contact-item input {
     width: 100%;
   }
@@ -572,7 +568,7 @@ a {
   border: solid 1.5px #C8C8C8;
   resize: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .l-main-contact-item textarea {
     width: 100%;
   }
