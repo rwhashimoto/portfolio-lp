@@ -7,105 +7,122 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Work - Portfolio</title>
 	<meta name="description" content="ディスクリプション">
+	<link rel="icon" href="/favicon.ico">
 	<link rel="stylesheet" href="./css/common.css">
 </head>
 
 <body>
 	<header class="l-header">
-		<div class="l-header-wrapper">
-			<a href="" class="l-header-logo">
-				<figure><img src="/images/logo.svg" alt="Portfolio_logo"></figure>
+		<h1 class="l-header-logo">
+			<a href="/">
+				<img src="/images/logo.svg" alt="My Work">
 			</a>
-			<ul class="l-header-menu">
-				<li class="l-header-menu-item"><a href="about">About</a></li>
-				<li class="l-header-menu-item"><a href="#works">Works</a></li>
-				<li class="l-header-menu-item"><a href="#news">News</a></li>
-				<li class="l-header-menu-item"><a href="#contact">Contact</a></li>
-				<li class="l-header-menu-item"><a href="DUMMY"><figure><img src="/images/icon-instagram.png" alt="ico-instagram"></figure></a></li>
+		</h1>
+		<nav>
+			<ul  class="l-header-items">
+				<li class="l-header-item"><a href="#about">About</a></li>
+				<li class="l-header-item"><a href="#works">Works</a></li>
+				<li class="l-header-item"><a href="#news">News</a></li>
+				<li class="l-header-item"><a href="#contact">Contact</a></li>
+				<li class="l-header-item ico-sns"><a href="DUMMY"><img src="/images/icon-instagram.png" alt="ico-instagram"></a></li>
 			</ul>
-		</div><!-- /.l-header-wrapper -->
+		</nav>
 	</header>
 	<main class="l-main">
-		<div class="l-main-wrapper">
-			<figure class="l-main-mv">
-				<img class="l-main-mv-pc" src="/images/mainvisual-pc.jpg" alt="mv-pc">
-				<img class="l-main-mv-sp" src="/images/mainvisual-sp.jpg" alt="mv-sp">
-			</figure>
-			<section id="about" class="l-main-content">
-				<h2 class="l-main-title">About</h2>
-				<div class="l-main-about">
-					<p class="name">Xxxxx Ashley</p>
-					<ul class="information">
-						<li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
-						<li>tel: 000-0000-0000</li>
-						<li>url: www.xxxxxx.jp</li>
-						<li>mail: xxx@xxxxxx.jp</li>
-					</ul>
-					<p class="profile">
-						プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキ
-						ストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト
-						テキストテキストテキストテキスト
-					</p>
-				</div>
-			</section>
-			<section id="works" class="l-main-content">
-				<h2 class="l-main-title">Works</h2>
-				<div class="l-main-works">
-					<figure class="l-main-works-item">
-						<img src="/images/works1.jpg" alt="img_works1">
-					</figure>
-					<figure class="l-main-works-item">
-						<img src="/images/works2.jpg" alt="img_works2">
-					</figure>
-					<figure class="l-main-works-item">
-						<img src="/images/works3.jpg" alt="img_works3">
-					</figure>
-					<figure class="l-main-works-item">
-						<img src="/images/works4.jpg" alt="img_works4">
-					</figure>
-					<figure class="l-main-works-item">
-						<img src="/images/works5.jpg" alt="img_works5">
-					</figure>
-					<figure class="l-main-works-item">
-						<img src="/images/works6.jpg" alt="img_works6">
-					</figure>
-				</div>
-			</section>
+		<picture class="l-main-mv">
+			<source media="(max-width: 600px)" srcset="/images/mainvisual-sp.jpg" alt="mv-sp">
+			<img src="/images/mainvisual-pc.jpg" alt="mv-pc">
+		</picture>
+		<section id="about" class="l-main-content">
+			<h2 class="l-main-title">About</h2>
+			<div class="about">
+				<p>Xxxxx Ashley</p>
+				<ul class="contact">
+					<li>2th Floor xxxxx Building x-x-x Nishiazabu, <span class="line-break">Minato-ku, Tokyo 106-0031Japan</span></li>
+					<li>tel: 000-0000-0000</li>
+					<li>url: www.xxxxxx.jp</li>
+					<li>mail: xxx@xxxxxx.jp</li>
+				</ul>
+				<p class="detail">
+					プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキ
+					ストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト
+					テキストテキストテキストテキスト
+				</p>
+			</div>
+		</section>
 
-			<section id="news" class="l-main-content">
-				<h2 class="l-main-title">News</h2>
-				<div class="l-main-news">
-					<dl><dt>2020.XX.XX</dt><dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト。</dd></dl>
+		<section id="works" class="l-main-content">
+			<h2 class="l-main-title">Works</h2>
+			<ul class="works">
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works1">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works2">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works3">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works4">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works5">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works6">
+				</li>
+			</ul>
+		</section>
+
+		<section id="news" class="l-main-content">
+			<h2 class="l-main-title">News</h2>
+			<div class="news">
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト。</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="contact" class="l-main-content">
+			<h2 class="l-main-title">Contact</h2>
+			<form class="contact" method="POST">
+				<div class="contact-item">
+					<span>NAME</span>
+					<input type="text" name="NAME">
 				</div>
-			</section>
-			<section id="contact" class="l-main-content">
-				<h2 class="l-main-title">Contact</h2>
-				<form class="l-main-contact" method="POST">
-					<div class="l-main-contact-item">
-						<p>NAME</p>
-						<input type="text" name="NAME">
-					</div>
-					<div class="l-main-contact-item">
-						<p>E-mail</p>
-						<input type="text" name="email">
-					</div>
-					<div class="l-main-contact-item">
-						<p>MESSAGE</p>
-						<textarea cols="30" rows="10"></textarea>
-					</div>
-				</form>
-			</section>
-		</div><!-- /.l-main-wrapper -->
+				<div class="contact-item">
+					<span>E-mail</span>
+					<input type="text" name="email">
+				</div>
+				<div class="contact-item">
+					<span>MESSAGE</span>
+					<textarea></textarea>
+				</div>
+				<input class="btn-submit" type="submit" value="送信">
+			</form>
+		</section>
 	</main>
-
+</body>
 	<footer class="l-footer">
 			<p>© 2020 My Work</p>
 	</footer>
-	<script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

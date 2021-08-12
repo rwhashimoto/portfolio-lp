@@ -1,32 +1,52 @@
 .l-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 960px;
     min-height: 270px;
     margin: 0 auto;
-    &-wrapper{//l-header-wrapper
-        display: flex;
-        justify-content: space-between;
-        width: 960px;
-        padding:  0 70px;
+    padding: 0 70px;
+    @include media-sp {
+        flex-direction: column;
+        justify-content:center;
+        min-height: 100px;
     }
     &-logo {//l-header-logo
-        width: 120px;
+        img {
+            max-width: 100%;
+        }
+        a {
+            display: block;
+        }
     }
-    &-menu {//l-header-menu
+    &-items {//l-header-items
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 315px;
-        color: $font-color;
-        &-item {
-            figure{
-                width: 20px;
-                img{
-                    width: 100%;
-                    height: auto;
+        @include media-sp {
+            width: 258px;
+        }
+    }
+    &-item {//l-header-item
+        &.ico-sns{
+            width: 20px;
+            img{
+                max-width: 100%;
+                height: auto;
+                @include media-sp {
+                    font-size: 1.2rem;
                 }
+            }
+        }
+        a{
+            color: $main-color;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                opacity: 0.5;
+            }
+            @include media-sp {
+                font-size: 1.2rem;
             }
         }
     }

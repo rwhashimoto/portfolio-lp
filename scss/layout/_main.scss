@@ -1,89 +1,158 @@
 .l-main {
-    &-wrapper {//l-main-wrapper
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    &-mv {//l-main-mv
-        margin: 0 calc(50% - 50vw);
+    &-mv {
+        //l-main-mv
         width: 100vw;
         height: 420px;
         img {
             width: auto;
             height: 100%;
+            object-fit: cover;
         }
-        &-sp {
-            display: none;
+    }
+    &-content {
+        //l-main-content
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 130px 60px 0;
+        &:nth-of-type(1) {
+            padding: 80px 60px 0;
         }
-        @include media-sp{
-            &-pc {
-                display: none;
+        &:nth-of-type(3) {
+            padding: 105px 60px 0;
+        }
+        @include media-sp {
+            padding: 70px 15px 0;
+            &:nth-of-type(1){
+                padding: 80px 15px 0;
             }
-            &-sp {
-                display: block;
-            }
-        }
-    }
-    &-content {//l-main-content
-        margin: 130px 60px 0;
-    }
-    &-title {//l-main-title
-        padding: 0 0 65px;
-        font-size: 2.4rem;
-        text-align: center;
-    }
-    &-about {//l-main-about
-        .information {
-            padding: 35px 0 0;
-            font-size: 1.4rem;
-        }
-        .profile{
-            padding: 35px 0 0;
-        }
-    }
-    &-works {//l-main-works
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        &-item {
-            margin: 0 0 24px;
-            width: 31%;
-            img {
-                width: 100%;
-                height: auto;
+            &:nth-of-type(3){
+                padding: 47px 15px 0;
             }
         }
-    }
-    &-news {//l-main-news
-        dl {
-            display: flex;
-            padding: 15px 0;
-            border-bottom: solid 1.5px $sub-color;
-            &:first-of-type {
-                border-top: solid 1.5px $sub-color;
-            }
-            dt {
-                padding: 0 84px 0 14px;
+        .about {
+            .contact {
+                padding: 30px 0 0;
                 font-size: 1.4rem;
+                @include media-sp {
+                    padding: 30px 0 0;
+                    .line-break {
+                        white-space: nowrap;
+                    }
+                }
             }
-            dd {
-                font-size: 1.4rem;
+            .detail {
+                padding: 30px 0 0;
+                @include media-sp {
+                    padding: 30px 0 0;
+                }
             }
         }
-    }
-    &-contact {//l-main-contact
-        &-item {
+        .works {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            margin: 0 0 10px;
-            input,
-            textarea {
-                width: 86%;
-                padding: 10px;
+            @include media-sp {
+                flex-wrap: nowrap;
+                flex-direction: column;
+            }
+            .works-item {
+                width: 31.5%;
+                margin-bottom: 23px;
+                @include media-sp {
+                    width: 100%;
+                }
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: top;
+                }
+            }
+        }
+        .news {
+            dl {
+                display: flex;
+                padding: 14px 0;
+                border-bottom: solid 1.5px $sub-color;
+                &:first-of-type {
+                    border-top: solid 1.5px $sub-color;
+                }
+                @include media-sp {
+                    flex-direction: column;
+                }
+                dt {
+                    padding: 0 84px 0 14px;
+                    font-size: 1.4rem;
+                }
+                dd {
+                    font-size: 1.4rem;
+                    @include media-sp {
+                        padding: 0 0 0 14px;
+                    }
+                }
+            }
+        }
+        .contact {
+            .contact-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0 10px;
+                &:last-of-type {
+                    padding: 0 0 30px;
+                }
+                @include media-sp {
+                    flex-direction: column;
+                }
+                span {
+                    font-size: 1.4rem;
+                }
+                input {
+                    width: 86%;
+                    padding: 10px;
+                    font-size: 1.4rem;
+                    border: solid 1.5px $sub-color;
+                    resize: none;
+                    @include media-sp {
+                        width: 100%;
+                    }
+                }
+                textarea {
+                    width: 86%;
+                    height: 160px;
+                    padding: 10px;
+                    font-size: 1.4rem;
+                    border: solid 1.5px $sub-color;
+                    resize: none;
+                    @include media-sp {
+                        width: 100%;
+                    }
+                }
+            }
+            .btn-submit {
+                display: block;
+                margin: 0 auto;
+                width: 200px;
+                padding: 15px 0;
+                background-color: $main-color;
+                color: $base-color;
                 font-size: 1.4rem;
-                border: solid 1.5px $sub-color;
-                resize: none;
+                border: solid 1px $main-color;
+                transition: all ease-in-out 0.3s;
+                &:hover {
+                    background-color: $base-color;
+                    color: $main-color;
+                }
             }
         }
     }
 
+    &-title {
+        //l-main-title
+        padding: 0 0 65px;
+        font-size: 2.4rem;
+        color: $main-color;
+        text-align: center;
+        @include media-sp {
+            padding: 0 0 40px;
+        }
+    }
 }
