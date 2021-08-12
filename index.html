@@ -29,93 +29,95 @@
 		</nav>
 	</header>
 	<main class="l-main">
-		<div class="l-main-wrapper">
-			<figure class="l-main-mv">
-				<img class="l-main-mv-pc" src="/images/mainvisual-pc.jpg" alt="mv-pc">
-				<img class="l-main-mv-sp" src="/images/mainvisual-sp.jpg" alt="mv-sp">
-			</figure>
-			<section id="about" class="l-main-content">
-				<h2 class="l-main-title">About</h2>
-				<div class="l-main-about">
-					<p class="name">Xxxxx Ashley</p>
-					<ul class="information">
-						<li>2th Floor xxxxx Building x-x-x Nishiazabu, <span class="line-break">Minato-ku, Tokyo 106-0031 Japan</span></li>
-						<li>tel: 000-0000-0000</li>
-						<li>url: www.xxxxxx.jp</li>
-						<li>mail: xxx@xxxxxx.jp</li>
-					</ul>
-					<p class="profile">
-						プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキ
-						ストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト
-						テキストテキストテキストテキスト
-					</p>
-				</div>
-			</section>
-			<section id="works" class="l-main-content">
-				<h2 class="l-main-title">Works</h2>
-				<ul class="l-main-works">
-					<li class="l-main-works-item">
-						<figure>
-							<img src="/images/works1.jpg" alt="img_works1">
-						</figure>
-					</li>
-					<li class="l-main-works-item">
-						<figure>
-							<img src="/images/works1.jpg" alt="img_works2">
-						</figure>
-					</li>
-					<li class="l-main-works-item">
-						<figure>
-							<img src="/images/works1.jpg" alt="img_works3">
-						</figure>
-					</li>
-					<li class="l-main-works-item">
-						<figure>
-							<img src="/images/works1.jpg" alt="img_works4">
-						</figure>
-					</li>
-					<li class="l-main-works-item">
-						<figure>
-							<img src="/images/works1.jpg" alt="img_works5">
-						</figure>
-					</li>
-					<li class="l-main-works-item">
-						<figure>
-							<img src="/images/works1.jpg" alt="img_works6">
-						</figure>
-					</li>
+		<picture class="l-main-mv">
+			<source media="(max-width: 600px)" srcset="/images/mainvisual-sp.jpg" alt="mv-sp">
+			<img src="/images/mainvisual-pc.jpg" alt="mv-pc">
+		</picture>
+		<section id="about" class="l-main-content">
+			<h2 class="l-main-title">About</h2>
+			<div class="about">
+				<p>Xxxxx Ashley</p>
+				<ul class="contact">
+					<li>2th Floor xxxxx Building x-x-x Nishiazabu, <span class="line-break">Minato-ku, Tokyo 106-0031Japan</span></li>
+					<li>tel: 000-0000-0000</li>
+					<li>url: www.xxxxxx.jp</li>
+					<li>mail: xxx@xxxxxx.jp</li>
 				</ul>
-			</section>
+				<p class="detail">
+					プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキ
+					ストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト
+					テキストテキストテキストテキスト
+				</p>
+			</div>
+		</section>
 
-			<section id="news" class="l-main-content">
-				<h2 class="l-main-title">News</h2>
-				<div class="l-main-news">
-					<dl><dt>2020.XX.XX</dt><dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd></dl>
-					<dl><dt>2020.XX.XX</dt><dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト。</dd></dl>
+		<section id="works" class="l-main-content">
+			<h2 class="l-main-title">Works</h2>
+			<ul class="works">
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works1">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works2">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works3">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works4">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works5">
+				</li>
+				<li class="works-item">
+					<img src="/images/works1.jpg" alt="img_works6">
+				</li>
+			</ul>
+		</section>
+
+		<section id="news" class="l-main-content">
+			<h2 class="l-main-title">News</h2>
+			<div class="news">
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+				</dl>
+				<dl>
+					<dt>2020.XX.XX</dt>
+					<dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト。</dd>
+				</dl>
+			</div>
+		</section>
+		<section id="contact" class="l-main-content">
+			<h2 class="l-main-title">Contact</h2>
+			<form class="contact" method="POST">
+				<div class="contact-item">
+					<span>NAME</span>
+					<input type="text" name="NAME">
 				</div>
-			</section>
-			<section id="contact" class="l-main-content">
-				<h2 class="l-main-title">Contact</h2>
-				<form class="l-main-contact" method="POST">
-					<div class="l-main-contact-item">
-						<p>NAME</p>
-						<input type="text" name="NAME">
-					</div>
-					<div class="l-main-contact-item">
-						<p>E-mail</p>
-						<input type="text" name="email">
-					</div>
-					<div class="l-main-contact-item">
-						<p>MESSAGE</p>
-						<textarea></textarea>
-					</div>
-					<input class="btn-submit" type="submit" value="送信">
-				</form>
-			</section>
-		</div><!-- /.l-main-wrapper -->
+				<div class="contact-item">
+					<span>E-mail</span>
+					<input type="text" name="email">
+				</div>
+				<div class="contact-item">
+					<span>MESSAGE</span>
+					<textarea></textarea>
+				</div>
+				<input class="btn-submit" type="submit" value="送信">
+			</form>
+		</section>
 	</main>
 
 	<footer class="l-footer">
