@@ -1,12 +1,10 @@
 .l-footer {
-    &-wrapper{//l-footer-wrapper
-        margin: 130px 0 0;
-        padding: 10px 0;
-        background-color: $main-color;
-        p{
-            color: $base-color;
-            font-size: 1.0rem;
-            text-align: center;
-        }
+    margin: 130px 0 0;
+    padding: 10px 0;
+    background-color: $main-color;
+    p {
+        color: $base-color;
+        font-size: 1rem;
+        text-align: center;
     }
 }
