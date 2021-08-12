@@ -1,23 +1,11 @@
 .l-main {
     &-mv {//l-main-mv
-        margin: 0 calc(50% - 50vw);
         width: 100vw;
         height: 420px;
         img {
-            width: 100%;
+            width: auto;
             height: 100%;
             object-fit: cover;
-        }
-        &-sp {
-            display: none;
-        }
-        @include media-sp{
-            &-pc {
-                display: none;
-            }
-            &-sp {
-                display: block;
-            }
         }
     }
     &-content {//l-main-content
