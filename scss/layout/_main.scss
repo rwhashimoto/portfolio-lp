@@ -153,4 +153,25 @@
             padding: 0 0 40px;
         }
     }
+
+    &-thanks {//l-main-thanks
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 435px);
+        @include media-sp {
+            min-height: calc(100vh - 265px);
+        }
+        .title {
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .text {
+            margin: 15px 0 0;
+            font-size: 1.44rem;
+            text-align: center;
+        }
+    }
 }
