@@ -10,6 +10,7 @@
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="./css/common.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript"> var submitted = false; </script> <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thanks.html';}"></iframe>
 </head>
 
 <body>
@@ -105,7 +106,7 @@
 		</section>
 		<section id="contact" class="l-main-content">
 			<h2 class="l-main-title">Contact</h2>
-			<form class="contact" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScdsHLOUIAfHR31zXmFFOGA9XNTgprPUTWkwW5mrYEOvpOO2g/formResponse">
+			<form class="contact" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScdsHLOUIAfHR31zXmFFOGA9XNTgprPUTWkwW5mrYEOvpOO2g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 				<div class="contact-item">
 					<span>NAME</span>
 					<input type="text" name="entry.2010179998">
