@@ -20,11 +20,11 @@
 		</h1>
 		<nav>
 			<ul  class="l-header-items">
-				<li class="l-header-item"><a href="<?= get_template_directory_uri(); ?>#about">About</a></li>
-				<li class="l-header-item"><a href="<?= get_template_directory_uri(); ?>#works">Works</a></li>
-				<li class="l-header-item"><a href="<?= get_template_directory_uri(); ?>#news">News</a></li>
-				<li class="l-header-item"><a href="<?= get_template_directory_uri(); ?>#contact">Contact</a></li>
-				<li class="l-header-item ico-sns"><a href="<?= get_template_directory_uri(); ?>DUMMY"><img src="<?= get_template_directory_uri(); ?>/assets/images/icon-instagram.png" alt="ico-instagram"></a></li>
+				<li class="l-header-item"><a href="#about">About</a></li>
+				<li class="l-header-item"><a href="#works">Works</a></li>
+				<li class="l-header-item"><a href="#news">News</a></li>
+				<li class="l-header-item"><a href="#contact">Contact</a></li>
+				<li class="l-header-item ico-sns"><a href="DUMMY"><img src="<?= get_template_directory_uri(); ?>/assets/images/icon-instagram.png" alt="ico-instagram"></a></li>
 			</ul>
 		</nav>
 	</header>
