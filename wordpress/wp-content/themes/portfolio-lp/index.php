@@ -8,7 +8,7 @@
 	<title>My Work - Portfolio</title>
 	<meta name="description" content="ディスクリプション">
 	<link rel="icon" href="<?= get_template_directory_uri(); ?>favicon.ico">
-	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css">
+	<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/common.css">
 </head>
 
 <body>
