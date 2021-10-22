@@ -1,5 +1,15 @@
 # portfolio-lp
 
+| サイト             | URL                             |
+| ------------------ | -----------------------------  |
+| フロントページ      | http://localhost:8000/          |
+| WordPress管理ページ | http://localhost:8000/wp-admin  |
+
+| WordPress |  |
+| --------- | ----- |
+| ID        | admin |
+| Password  | admin |
+
 ## docker起動
 `$ docker-compose up -d`
 
