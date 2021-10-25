@@ -12,10 +12,14 @@
     if ( $works_query->have_posts() ): // ↑で指定したクエリに記事が存在する場合
         while ( $works_query->have_posts() ): // クエリの記事を表示し続ける
         $works_query->the_post(); // クエリの記事を表示
+        $thumbnail = get_field('thumbnail');
+        $works_text = get_field('text');
     ?>
-	
+
 	    <li class="works-item">
+            <img src="<?= $thumbnail ?>" alt="">
             <p><?= get_the_title(); ?></p>
+            <p><?= $works_text ?></p>
 	    </li>
         <?php
     endwhile; endif;
