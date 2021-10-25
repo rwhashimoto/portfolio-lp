@@ -103,25 +103,27 @@
                 span {
                     font-size: 1.4rem;
                 }
-                input {
+                .your-name,
+                .your-email,
+                .your-message {
                     width: 86%;
-                    padding: 10px;
-                    font-size: 1.4rem;
-                    border: solid 1.5px $sub-color;
-                    resize: none;
                     @include media-sp {
                         width: 100%;
                     }
-                }
-                textarea {
-                    width: 86%;
-                    height: 160px;
-                    padding: 10px;
-                    font-size: 1.4rem;
-                    border: solid 1.5px $sub-color;
-                    resize: none;
-                    @include media-sp {
+                    input {
                         width: 100%;
+                        padding: 10px;
+                        font-size: 1.4rem;
+                        border: solid 1.5px $sub-color;
+                        resize: none;
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 160px;
+                        padding: 10px;
+                        font-size: 1.4rem;
+                        border: solid 1.5px $sub-color;
+                        resize: none;
                     }
                 }
             }
