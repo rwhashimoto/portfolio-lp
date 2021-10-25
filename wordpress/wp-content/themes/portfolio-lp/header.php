@@ -20,7 +20,7 @@
 		</h1>
 		<nav>
 			<ul  class="l-header-items">
-				<li class="l-header-item"><a href="#about">About</a></li>
+				<li class="l-header-item"><a href="<?php echo home_url('/about/'); ?>">About</a></li>
 				<li class="l-header-item"><a href="#works">Works</a></li>
 				<li class="l-header-item"><a href="#news">News</a></li>
 				<li class="l-header-item"><a href="#contact">Contact</a></li>

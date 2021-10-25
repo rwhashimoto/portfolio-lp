@@ -7,23 +7,6 @@
 				<img src="<?= get_template_directory_uri(); ?>/assets/images/mainvisual-pc.jpg" alt="mv-pc">
 			</picture>
 		</div>
-		<section id="about" class="l-main-content">
-			<h2 class="l-main-title">About</h2>
-			<div class="about">
-				<p>Xxxxx Ashley</p>
-				<ul class="contact">
-					<li>2th Floor xxxxx Building x-x-x Nishiazabu, <span class="line-break">Minato-ku, Tokyo 106-0031Japan</span></li>
-					<li>tel: 000-0000-0000</li>
-					<li>url: www.xxxxxx.jp</li>
-					<li>mail: xxx@xxxxxx.jp</li>
-				</ul>
-				<p class="detail">
-					プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキ
-					ストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキスト
-					テキストテキストテキストテキスト
-				</p>
-			</div>
-		</section>
 
 		<section id="works" class="l-main-content">
 			<h2 class="l-main-title">Works</h2>
