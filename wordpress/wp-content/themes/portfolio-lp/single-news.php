@@ -2,26 +2,27 @@
 <section id="news" class="l-main-content">
     <h2 class="l-main-title">News</h2>
     <div class="news">
-        <dl>
-            <dt>2020.XX.XX</dt>
-            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
-        </dl>
-        <dl>
-            <dt>2020.XX.XX</dt>
-            <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
-        </dl>
-        <dl>
-            <dt>2020.XX.XX</dt>
-            <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
-        </dl>
-        <dl>
-            <dt>2020.XX.XX</dt>
-            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
-        </dl>
-        <dl>
-            <dt>2020.XX.XX</dt>
-            <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト。</dd>
-        </dl>
+
+        <?php
+        $args = array(
+            'post_type' => 'news', // 投稿タイプを指定
+            'posts_per_page' => 10, // 表示する記事数
+        );
+        $news_query = new WP_Query($args);
+        // もし投稿があった場合
+        if ($news_query->have_posts()) :
+            // 条件を満たし続ける間（↑で指定している「投稿があるなら」って条件を満たす限り）
+            while ($news_query->have_posts()) :
+                // newsのthe_post（投稿）を表示する
+                $news_query->the_post(); ?>
+                <dl>
+                    <dt><?= get_the_date(); ?></dt>
+                    <dd><?= get_the_title(); ?></dd>
+                </dl>
+        <?php
+            // ループは必ず終了させる
+            endwhile;
+        endif; ?>
     </div>
 </section>
 <?php get_footer(); ?>
