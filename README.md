@@ -21,3 +21,11 @@
 
 ## docker再起動
 `$ docker-compose restart`
+
+## データの共有について
+* All-in-One WP Migration
+    エクスポート>ファイルで出力したものを/dataに保存
+* カスタムフィールド
+    ツール > Export Fileで出力したものを/dataに保存
+* CPT UI
+    ツール > Export Post Types 設定に書かれている内容を/data/cpt-ui.jsonに記載
