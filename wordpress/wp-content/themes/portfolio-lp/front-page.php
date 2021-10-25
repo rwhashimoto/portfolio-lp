@@ -30,6 +30,7 @@
 					<img src="<?= get_template_directory_uri(); ?>/assets/images/works6.jpg" alt="img_works6">
 				</li>
 			</ul>
+			<a href="<?php echo home_url('/works/'); ?>">See More</a>
 		</section>
 
 		<section id="news" class="l-main-content">
@@ -55,8 +56,8 @@
 			<?php
 				// ループは必ず終了させる
 				endwhile; endif; ?>
-
 			</div>
+			<a href="<?php echo home_url('/news/'); ?>">See More</a>
 		</section>
 	</main>
 
