@@ -37,12 +37,17 @@
 			<div class="news">
 
 			<?php
+			$args = array(
+				'post_type' => 'news', // 投稿タイプを指定
+				'posts_per_page' => 10, // 表示する記事数
+			);
+			$news_query = new WP_Query($args);
 			// もし投稿があった場合
-			if(have_posts()):
+			if($news_query->have_posts()):
 			// 条件を満たし続ける間（↑で指定している「投稿があるなら」って条件を満たす限り）
-			while(have_posts()): 
+			while($news_query->have_posts()): 
 			// the_post（投稿）を表示する
-			the_post(); ?>
+			$news_query->the_post(); ?>
 				<dl>
 					<dt><?= get_the_date(); //投稿日 ?></dt>
 					<dd><?= get_the_title(); //投稿タイトル ?></dd>
@@ -50,7 +55,7 @@
 			<?php
 				// ループは必ず終了させる
 				endwhile; endif; ?>
-				
+
 			</div>
 		</section>
 	</main>
