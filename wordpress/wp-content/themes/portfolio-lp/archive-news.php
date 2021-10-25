@@ -17,12 +17,12 @@
                 $news_query->the_post(); ?>
                 <dl>
                     <dt><?= get_the_date(); ?></dt>
-                    <dd><?= get_the_title(); ?></dd>
+                    <dd><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></dd>
                 </dl>
         <?php
-            // ループは必ず終了させる
-            endwhile;
-        endif; ?>
+        // ループは必ず終了させる
+        endwhile;
+        endif; ?>   
     </div>
 </section>
 <?php get_footer(); ?>
