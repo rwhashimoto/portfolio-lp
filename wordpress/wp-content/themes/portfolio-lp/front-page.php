@@ -11,24 +11,23 @@
 		<section id="works" class="l-main-content">
 			<h2 class="l-main-title">Works</h2>
 			<ul class="works">
+			<?php
+			$args = array(
+				'post_type' => 'works',
+				'posts_per_page' => 6,
+			);
+			$works_query = new WP_Query($args);
+			if($works_query->have_posts()):
+			while($works_query->have_posts()): 
+			$works_query->the_post();
+			$thumbnail = get_field('thumbnail');
+			?>
 				<li class="works-item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/works1.jpg" alt="img_works1">
+					<img src="<?= $thumbnail ?>" alt="">
 				</li>
-				<li class="works-item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/works2.jpg" alt="img_works2">
-				</li>
-				<li class="works-item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/works3.jpg" alt="img_works3">
-				</li>
-				<li class="works-item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/works4.jpg" alt="img_works4">
-				</li>
-				<li class="works-item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/works5.jpg" alt="img_works5">
-				</li>
-				<li class="works-item">
-					<img src="<?= get_template_directory_uri(); ?>/assets/images/works6.jpg" alt="img_works6">
-				</li>
+			<?php
+				// ループは必ず終了させる
+				endwhile; endif; ?>
 			</ul>
 			<a href="<?php echo home_url('/works/'); ?>">See More</a>
 		</section>
