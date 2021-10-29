@@ -3,7 +3,7 @@
 	<main class="l-main">
 		<div class="l-main-mv">
 			<picture>
-				<source media="(max-width: 600px)" srcset="images/mainvisual-sp.jpg" alt="mv-sp">
+				<source media="(max-width: 600px)" srcset="<?= get_template_directory_uri(); ?>/assets/images/mainvisual-sp.jpg" alt="mv-sp">
 				<img src="<?= get_template_directory_uri(); ?>/assets/images/mainvisual-pc.jpg" alt="mv-pc">
 			</picture>
 		</div>
