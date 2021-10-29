@@ -4,7 +4,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 640px;
         margin:  0 auto;
         @include media-sp {
             flex-wrap: nowrap;
@@ -35,5 +34,28 @@
             }
         }
     }
+}
 
+.archive-news {
+    dl {
+        display: flex;
+        padding: 14px 0;
+        border-bottom: solid 1.5px $sub-color;
+        &:first-of-type {
+            border-top: solid 1.5px $sub-color;
+        }
+        @include media-sp {
+            flex-direction: column;
+        }
+        dt {
+            padding: 0 84px 0 14px;
+            font-size: 1.4rem;
+        }
+        dd {
+            font-size: 1.4rem;
+            @include media-sp {
+                padding: 0 0 0 14px;
+            }
+        }
+    }
 }

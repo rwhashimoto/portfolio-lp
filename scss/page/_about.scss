@@ -1,0 +1,18 @@
+.about {
+    .contact {
+        padding: 30px 0 0;
+        font-size: 1.4rem;
+        @include media-sp {
+            padding: 30px 0 0;
+            .line-break {
+                white-space: nowrap;
+            }
+        }
+    }
+    .detail {
+        padding: 30px 0 0;
+        @include media-sp {
+            padding: 30px 0 0;
+        }
+    }
+}

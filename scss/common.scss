@@ -14,8 +14,12 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/main';
-@import './layout/archive';
-@import './layout/single';
+
+//page
+@import './page/about';
+@import './page/contact';
+@import './page/archive';
+@import './page/single';
 
 //component
 @import './component/btn';

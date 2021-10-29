@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="news" class="l-main-content">
+<section id="news" class="l-main-content archive-news">
     <h2 class="l-main-title">News</h2>
     <div class="news">
 
