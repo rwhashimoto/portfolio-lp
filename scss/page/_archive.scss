@@ -1,4 +1,11 @@
 .archive-works {
+    &.l-main-content {
+        padding: 0 60px 0;
+        min-height: calc(100vh - 400px);
+        @include media-sp {
+            padding: 0 15px 0;
+        }
+    }
     .works {
         display: flex;
         flex-direction: column;
@@ -37,6 +44,12 @@
 }
 
 .archive-news {
+    &.l-main-content {
+        padding: 0 60px 0;
+        @include media-sp {
+            padding: 0 15px 0;
+        }
+    }
     dl {
         display: flex;
         padding: 14px 0;

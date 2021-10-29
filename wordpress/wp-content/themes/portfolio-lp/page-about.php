@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section id="about" class="l-main-content">
+<section id="about" class="l-main-content page-about">
     <h2 class="l-main-title">About</h2>
     <div class="about">
         <p>Xxxxx Ashley</p>
