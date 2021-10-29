@@ -89,13 +89,14 @@
                 }
             }
         }
-        .contact {
+        .wpcf7-form {
             .contact-item {
                 display: flex;
                 justify-content: space-between;
-                padding: 0 0 10px;
+                margin: 0 0 10px;
                 &:last-of-type {
                     padding: 0 0 30px;
+                    background-color: red;
                 }
                 @include media-sp {
                     flex-direction: column;
