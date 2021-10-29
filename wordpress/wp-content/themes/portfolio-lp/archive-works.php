@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="works" class="l-main-content">
+<section id="works" class="l-main-content archive-works">
 	<h2 class="l-main-title">Works</h2>
     <ul class="works">
     <?php
@@ -18,8 +18,8 @@
 
 	    <li class="works-item">
             <img src="<?= $thumbnail ?>" alt="">
-            <p><?= get_the_title(); ?></p>
-            <p><?= $works_text ?></p>
+            <p class="title"><?= get_the_title(); ?></p>
+            <p class="text"><?= $works_text ?></p>
 	    </li>
         <?php
     endwhile; endif;
