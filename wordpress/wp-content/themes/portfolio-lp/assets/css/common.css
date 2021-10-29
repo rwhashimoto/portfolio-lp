@@ -402,7 +402,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .l-footer {
-    margin: 70px 0 0;
+    margin: 205px 0 0;
   }
 }
 .l-footer p {
@@ -429,14 +429,11 @@ a {
 }
 @media screen and (max-width: 600px) {
   .l-main-content {
-    min-height: calc(100vh - 205px);
-    padding: 70px 15px 0;
-  }
-  .l-main-content:nth-of-type(1) {
+    min-height: calc(100vh - 370px);
     padding: 80px 15px 0;
   }
-  .l-main-content:nth-of-type(3) {
-    padding: 47px 15px 0;
+  .l-main-content:nth-of-type(2) {
+    padding: 130px 15px 0;
   }
 }
 .l-main-content .works {
@@ -506,7 +503,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .page-about.l-main-content {
-    padding: 0 15px 0;
+    padding: 30px 15px 0;
   }
 }
 .page-about .about .contact {
@@ -535,7 +532,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .page-contact.l-main-content {
-    padding: 0 15px 0;
+    padding: 30px 15px 0;
   }
 }
 .page-contact .wpcf7-form .contact-item {
@@ -586,7 +583,7 @@ a {
   border: solid 1.5px #C8C8C8;
   resize: none;
 }
-.page-contact .wpcf7-form .contact-item .wpcf7-spinner {
+.page-contact .wpcf7-form .wpcf7-spinner {
   display: none;
 }
 
@@ -596,7 +593,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .archive-works.l-main-content {
-    padding: 0 15px 0;
+    padding: 30px 15px 0;
   }
 }
 .archive-works .works {
@@ -605,6 +602,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  max-width: 640px;
 }
 @media screen and (max-width: 600px) {
   .archive-works .works {
@@ -646,7 +644,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .archive-news.l-main-content {
-    padding: 0 15px 0;
+    padding: 30px 15px 0;
   }
 }
 .archive-news dl {
@@ -672,6 +670,17 @@ a {
 @media screen and (max-width: 600px) {
   .archive-news dl dd {
     padding: 0 0 0 14px;
+  }
+}
+.archive-news dl dd a {
+  color: #24292E;
+}
+@media screen and (min-width: 601px) {
+  .archive-news dl dd a {
+    transition: all ease-in-out 0.3s;
+  }
+  .archive-news dl dd a:hover {
+    opacity: 0.6;
   }
 }
 

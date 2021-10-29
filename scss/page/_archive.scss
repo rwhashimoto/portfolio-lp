@@ -3,7 +3,7 @@
         padding: 0 60px 0;
         min-height: calc(100vh - 400px);
         @include media-sp {
-            padding: 0 15px 0;
+            padding: 30px 15px 0;
         }
     }
     .works {
@@ -12,6 +12,7 @@
         justify-content: center;
         align-items: center;
         margin:  0 auto;
+        max-width: 640px;
         @include media-sp {
             flex-wrap: nowrap;
             flex-direction: column;
@@ -47,7 +48,7 @@
     &.l-main-content {
         padding: 0 60px 0;
         @include media-sp {
-            padding: 0 15px 0;
+            padding: 30px 15px 0;
         }
     }
     dl {
@@ -68,6 +69,15 @@
             font-size: 1.4rem;
             @include media-sp {
                 padding: 0 0 0 14px;
+            }
+            a {
+                color: $main-color;
+                @include media-pc {
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
             }
         }
     }
