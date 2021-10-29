@@ -415,6 +415,7 @@ a {
 }
 .l-main-content {
   max-width: 960px;
+  min-height: calc(100vh - 435px);
   margin: 0 auto;
   padding: 130px 60px 0;
 }
