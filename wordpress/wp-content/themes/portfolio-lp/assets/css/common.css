@@ -689,7 +689,8 @@ a {
   padding: 0 0 45px;
 }
 .single-news .entry-field {
-  margin: 60px 0 0;
+  max-width: 100%;
+  margin: 60px auto 0;
 }
 .single-news .entry-field p {
   text-align: left;
