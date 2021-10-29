@@ -553,21 +553,6 @@ a {
   border: solid 1.5px #C8C8C8;
   resize: none;
 }
-.l-main-content .contact .btn-submit {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  padding: 15px 0;
-  background-color: #24292E;
-  color: #fff;
-  font-size: 1.4rem;
-  border: solid 1px #24292E;
-  transition: all ease-in-out 0.3s;
-}
-.l-main-content .contact .btn-submit:hover {
-  background-color: #fff;
-  color: #24292E;
-}
 .l-main-title {
   padding: 0 0 65px;
   font-size: 2.4rem;
@@ -577,5 +562,42 @@ a {
 @media screen and (max-width: 600px) {
   .l-main-title {
     padding: 0 0 40px;
+  }
+}
+
+.btn-more {
+  display: block;
+  margin: 50px auto 0;
+  font-size: 1.4rem;
+  color: #24292E;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 601px) {
+  .btn-more {
+    transition: all ease-in-out 0.3s;
+  }
+  .btn-more:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding: 15px 0;
+  background-color: #24292E;
+  color: #fff;
+  font-size: 1.4rem;
+  border: solid 1px #24292E;
+}
+@media screen and (min-width: 601px) {
+  .btn-submit {
+    transition: all ease-in-out 0.3s;
+  }
+  .btn-submit:hover {
+    background-color: #fff;
+    color: #24292E;
   }
 }

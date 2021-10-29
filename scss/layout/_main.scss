@@ -7,8 +7,7 @@
             object-fit: cover;
         }
     }
-    &-content {
-        //l-main-content
+    &-content {//l-main-content
         max-width: 960px;
         min-height: calc(100vh - 435px);
         margin: 0 auto;
@@ -126,21 +125,6 @@
                         border: solid 1.5px $sub-color;
                         resize: none;
                     }
-                }
-            }
-            .btn-submit {
-                display: block;
-                margin: 0 auto;
-                width: 200px;
-                padding: 15px 0;
-                background-color: $main-color;
-                color: $base-color;
-                font-size: 1.4rem;
-                border: solid 1px $main-color;
-                transition: all ease-in-out 0.3s;
-                &:hover {
-                    background-color: $base-color;
-                    color: $main-color;
                 }
             }
         }
