@@ -12,6 +12,20 @@
         }
     }
 }
+.btn-prev {
+    display: block;
+    margin: 50px auto 0;
+    font-size: 1.4rem;
+    color: $main-color;
+    text-align: center;
+    text-decoration: underline;
+    @include media-pc {
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
 
 .btn-submit {
     display: block;
