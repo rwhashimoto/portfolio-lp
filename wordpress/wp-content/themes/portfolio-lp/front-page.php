@@ -29,7 +29,7 @@
 				// ループは必ず終了させる
 				endwhile; endif; ?>
 			</ul>
-			<a class="btn-more" href="<?php echo home_url('/works/'); ?>">See More</a>
+			<a class="btn-more" href="<?= home_url('/works/'); ?>">See More</a>
 		</section>
 
 		<section id="news" class="l-main-content">
@@ -56,7 +56,7 @@
 				// ループは必ず終了させる
 				endwhile; endif; ?>
 			</div>
-			<a class="btn-more" href="<?php echo home_url('/news/'); ?>">See More</a>
+			<a class="btn-more" href="<?= home_url('/news/'); ?>">See More</a>
 		</section>
 	</main>
 
