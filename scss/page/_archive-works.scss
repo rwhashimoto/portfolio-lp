@@ -1,0 +1,45 @@
+.archive-works {
+    &.l-main-content {
+        padding: 0 60px 0;
+        min-height: calc(100vh - 400px);
+        @include media-sp {
+            padding: 30px 15px 0;
+        }
+    }
+    .works {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  0 auto;
+        max-width: 640px;
+        @include media-sp {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .works-item {
+            width: 100%;
+            margin: 0 0 140px;
+            @include media-sp {
+                margin: 0 0 60px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                vertical-align: top;
+            }
+            .title {
+                margin: 30px 0 0;
+                font-size: 1.4rem;
+                font-weight: bold;
+                @include media-sp {
+                    margin: 20px 0 0;
+                }
+            }
+            .text {
+                margin: 10px 0 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

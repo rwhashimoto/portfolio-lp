@@ -2,6 +2,9 @@
     margin: 130px 0 0;
     padding: 10px 0;
     background-color: $main-color;
+    @include media-sp {
+        margin: 205px 0 0;
+    }
     p {
         color: $base-color;
         font-size: 1rem;

@@ -1,0 +1,17 @@
+.single-news {
+    .l-main-title {
+        text-align: left;
+        padding: 0 0 45px;
+    }
+    .entry-field {
+        max-width: 100%;
+        margin: 60px auto 0;
+        p {
+            text-align: left;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

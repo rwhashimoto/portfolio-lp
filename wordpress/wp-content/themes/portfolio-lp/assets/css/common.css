@@ -1,0 +1,755 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/*!
+ * ress.css • v4.0.0
+ * MIT License
+ * github.com/filipelinhares/ress
+ */
+/* # =================================================================
+   # Global selectors
+   # ================================================================= */
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS */
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
+  vertical-align: inherit;
+}
+
+* {
+  padding: 0;
+  /* Reset `padding` and `margin` of all elements */
+  margin: 0;
+}
+
+/* # =================================================================
+   # General elements
+   # ================================================================= */
+hr {
+  overflow: visible;
+  /* Show the overflow in Edge and IE */
+  height: 0;
+  /* Add the correct box sizing in Firefox */
+  color: inherit;
+  /* Correct border color in Firefox. */
+}
+
+details,
+main {
+  display: block;
+  /* Render the `main` element consistently in IE. */
+}
+
+summary {
+  display: list-item;
+  /* Add the correct display in all browsers */
+}
+
+small {
+  font-size: 80%;
+  /* Set font-size to 80% in `small` elements */
+}
+
+[hidden] {
+  display: none;
+  /* Add the correct display in IE */
+}
+
+abbr[title] {
+  border-bottom: none;
+  /* Remove the bottom border in Chrome 57 */
+  /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+a {
+  background-color: transparent;
+  /* Remove the gray background on active links in IE 10 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+  /* Remove the outline when hovering in all browsers */
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* Specify the font family of code elements */
+}
+
+pre {
+  font-size: 1em;
+  /* Correct the odd `em` font sizing in all browsers */
+}
+
+b,
+strong {
+  font-weight: bolder;
+  /* Add the correct font weight in Chrome, Edge, and Safari */
+}
+
+/* https://gist.github.com/unruthless/413930 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  border-color: inherit;
+  /* Correct border color in all Chrome, Edge, and Safari. */
+  text-indent: 0;
+  /* Remove text indentation in Chrome, Edge, and Safari */
+}
+
+/* # =================================================================
+   # Forms
+   # ================================================================= */
+input {
+  border-radius: 0;
+}
+
+/* Replace pointer cursor in disabled elements */
+[disabled] {
+  cursor: default;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+  /* Correct the cursor style of increment and decrement buttons in Chrome */
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* Correct the odd appearance in Chrome and Safari */
+  outline-offset: -2px;
+  /* Correct the outline style in Safari */
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  /* Remove the inner padding in Chrome and Safari on macOS */
+}
+
+textarea {
+  overflow: auto;
+  /* Internet Explorer 11+ */
+  resize: vertical;
+  /* Specify textarea resizability */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  /* Specify font inheritance of form elements */
+}
+
+optgroup {
+  font-weight: bold;
+  /* Restore the font weight unset by the previous rule */
+}
+
+button {
+  overflow: visible;
+  /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
+}
+
+button,
+select {
+  text-transform: none;
+  /* Firefox 40+, Internet Explorer 11- */
+}
+
+/* Apply cursor pointer to button elements */
+button,
+[type=button],
+[type=reset],
+[type=submit],
+[role=button] {
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Remove inner padding and border in Firefox 4+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Replace focus style removed in the border reset above */
+button:-moz-focusring,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  outline: 1px dotted ButtonText;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* Correct the inability to style clickable types in iOS */
+}
+
+/* Remove the default button styling in all browsers */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline-width: 0;
+}
+
+/* Style select like a standard input */
+select {
+  -moz-appearance: none;
+  /* Firefox 36+ */
+  -webkit-appearance: none;
+  /* Chrome 41+ */
+}
+
+select::-ms-expand {
+  display: none;
+  /* Internet Explorer 11+ */
+}
+
+select::-ms-value {
+  color: currentColor;
+  /* Internet Explorer 11+ */
+}
+
+legend {
+  border: 0;
+  /* Correct `color` not being inherited in IE 8/9/10/11 */
+  color: inherit;
+  /* Correct the color inheritance from `fieldset` elements in IE */
+  display: table;
+  /* Correct the text wrapping in Edge and IE */
+  max-width: 100%;
+  /* Correct the text wrapping in Edge and IE */
+  white-space: normal;
+  /* Correct the text wrapping in Edge and IE */
+  max-width: 100%;
+  /* Correct the text wrapping in Edge 18- and IE */
+}
+
+::-webkit-file-upload-button {
+  /* Correct the inability to style clickable types in iOS and Safari */
+  -webkit-appearance: button;
+  color: inherit;
+  font: inherit;
+  /* Change font properties to `inherit` in Chrome and Safari */
+}
+
+/* # =================================================================
+   # Specify media element style
+   # ================================================================= */
+img {
+  border-style: none;
+  /* Remove border when inside `a` element in IE 8/9/10 */
+}
+
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera */
+progress {
+  vertical-align: baseline;
+}
+
+/* # =================================================================
+   # Accessibility
+   # ================================================================= */
+/* Specify the progress cursor of updating elements */
+[aria-busy=true] {
+  cursor: progress;
+}
+
+/* Specify the pointer cursor of trigger elements */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
+[aria-disabled=true] {
+  cursor: default;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p,
+a {
+  font-size: 1.4rem;
+}
+
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  min-height: 270px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+@media screen and (max-width: 600px) {
+  .l-header {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+  }
+}
+.l-header-logo img {
+  max-width: 100%;
+}
+.l-header-logo a {
+  display: block;
+}
+.l-header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 315px;
+}
+@media screen and (max-width: 600px) {
+  .l-header-items {
+    width: 258px;
+  }
+}
+.l-header-item.ico-sns {
+  width: 20px;
+}
+.l-header-item.ico-sns img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .l-header-item.ico-sns img {
+    font-size: 1.2rem;
+  }
+}
+.l-header-item a {
+  color: #24292E;
+  transition: all ease-in-out 0.3s;
+}
+.l-header-item a:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 600px) {
+  .l-header-item a {
+    font-size: 1.2rem;
+  }
+}
+
+.l-footer {
+  margin: 130px 0 0;
+  padding: 10px 0;
+  background-color: #24292E;
+}
+@media screen and (max-width: 600px) {
+  .l-footer {
+    margin: 205px 0 0;
+  }
+}
+.l-footer p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.l-main-mv img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.l-main-content {
+  max-width: 960px;
+  min-height: calc(100vh - 435px);
+  margin: 0 auto;
+  padding: 80px 60px 0;
+}
+.l-main-content:nth-of-type(2) {
+  padding: 130px 60px 0;
+}
+@media screen and (max-width: 600px) {
+  .l-main-content {
+    min-height: calc(100vh - 370px);
+    padding: 80px 15px 0;
+  }
+  .l-main-content:nth-of-type(2) {
+    padding: 130px 15px 0;
+  }
+}
+.l-main-content .works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .l-main-content .works {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+.l-main-content .works .works-item {
+  width: 31.5%;
+  margin-bottom: 23px;
+}
+@media screen and (max-width: 600px) {
+  .l-main-content .works .works-item {
+    width: 100%;
+  }
+}
+.l-main-content .works .works-item img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.l-main-content .news dl {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: solid 1.5px #C8C8C8;
+}
+.l-main-content .news dl:first-of-type {
+  border-top: solid 1.5px #C8C8C8;
+}
+@media screen and (max-width: 600px) {
+  .l-main-content .news dl {
+    flex-direction: column;
+  }
+}
+.l-main-content .news dl dt {
+  padding: 0 84px 0 14px;
+  font-size: 1.4rem;
+}
+.l-main-content .news dl dd {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+  .l-main-content .news dl dd {
+    padding: 0 0 0 14px;
+  }
+}
+.l-main-title {
+  padding: 0 0 65px;
+  font-size: 2.4rem;
+  color: #24292E;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .l-main-title {
+    padding: 0 0 40px;
+  }
+}
+
+.page-about.l-main-content {
+  padding: 0 60px 0;
+}
+@media screen and (max-width: 600px) {
+  .page-about.l-main-content {
+    padding: 30px 15px 0;
+  }
+}
+.page-about .about .contact {
+  padding: 30px 0 0;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+  .page-about .about .contact {
+    padding: 30px 0 0;
+  }
+  .page-about .about .contact .line-break {
+    white-space: nowrap;
+  }
+}
+.page-about .about .detail {
+  padding: 30px 0 0;
+}
+@media screen and (max-width: 600px) {
+  .page-about .about .detail {
+    padding: 30px 0 0;
+  }
+}
+
+.page-contact.l-main-content {
+  padding: 0 60px 0;
+}
+@media screen and (max-width: 600px) {
+  .page-contact.l-main-content {
+    padding: 30px 15px 0;
+  }
+}
+.page-contact .wpcf7-form .contact-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+}
+.page-contact .wpcf7-form .contact-item:last-of-type {
+  padding: 0 0 30px;
+  background-color: red;
+}
+@media screen and (max-width: 600px) {
+  .page-contact .wpcf7-form .contact-item {
+    flex-direction: column;
+  }
+}
+.page-contact .wpcf7-form .contact-item span {
+  font-size: 1.4rem;
+}
+.page-contact .wpcf7-form .contact-item .your-name,
+.page-contact .wpcf7-form .contact-item .your-email,
+.page-contact .wpcf7-form .contact-item .your-message {
+  width: 86%;
+}
+@media screen and (max-width: 600px) {
+  .page-contact .wpcf7-form .contact-item .your-name,
+.page-contact .wpcf7-form .contact-item .your-email,
+.page-contact .wpcf7-form .contact-item .your-message {
+    width: 100%;
+  }
+}
+.page-contact .wpcf7-form .contact-item .your-name input,
+.page-contact .wpcf7-form .contact-item .your-email input,
+.page-contact .wpcf7-form .contact-item .your-message input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  border: solid 1.5px #C8C8C8;
+  resize: none;
+}
+.page-contact .wpcf7-form .contact-item .your-name textarea,
+.page-contact .wpcf7-form .contact-item .your-email textarea,
+.page-contact .wpcf7-form .contact-item .your-message textarea {
+  width: 100%;
+  height: 160px;
+  padding: 10px;
+  font-size: 1.4rem;
+  border: solid 1.5px #C8C8C8;
+  resize: none;
+}
+.page-contact .wpcf7-form .wpcf7-spinner {
+  display: none;
+}
+
+.archive-news.l-main-content {
+  padding: 0 60px 0;
+}
+@media screen and (max-width: 600px) {
+  .archive-news.l-main-content {
+    padding: 30px 15px 0;
+  }
+}
+.archive-news dl {
+  display: flex;
+  padding: 14px 0;
+  border-bottom: solid 1.5px #C8C8C8;
+}
+.archive-news dl:first-of-type {
+  border-top: solid 1.5px #C8C8C8;
+}
+@media screen and (max-width: 600px) {
+  .archive-news dl {
+    flex-direction: column;
+  }
+}
+.archive-news dl dt {
+  padding: 0 84px 0 14px;
+  font-size: 1.4rem;
+}
+.archive-news dl dd {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+  .archive-news dl dd {
+    padding: 0 0 0 14px;
+  }
+}
+.archive-news dl dd a {
+  color: #24292E;
+}
+@media screen and (min-width: 601px) {
+  .archive-news dl dd a {
+    transition: all ease-in-out 0.3s;
+  }
+  .archive-news dl dd a:hover {
+    opacity: 0.6;
+  }
+}
+
+.archive-works.l-main-content {
+  padding: 0 60px 0;
+  min-height: calc(100vh - 400px);
+}
+@media screen and (max-width: 600px) {
+  .archive-works.l-main-content {
+    padding: 30px 15px 0;
+  }
+}
+.archive-works .works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 640px;
+}
+@media screen and (max-width: 600px) {
+  .archive-works .works {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+.archive-works .works .works-item {
+  width: 100%;
+  margin: 0 0 140px;
+}
+@media screen and (max-width: 600px) {
+  .archive-works .works .works-item {
+    margin: 0 0 60px;
+  }
+}
+.archive-works .works .works-item img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.archive-works .works .works-item .title {
+  margin: 30px 0 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .archive-works .works .works-item .title {
+    margin: 20px 0 0;
+  }
+}
+.archive-works .works .works-item .text {
+  margin: 10px 0 0;
+  font-size: 1.4rem;
+}
+
+.single-news .l-main-title {
+  text-align: left;
+  padding: 0 0 45px;
+}
+.single-news .entry-field {
+  max-width: 100%;
+  margin: 60px auto 0;
+}
+.single-news .entry-field p {
+  text-align: left;
+}
+.single-news .entry-field img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-more {
+  display: block;
+  margin: 50px auto 0;
+  font-size: 1.4rem;
+  color: #24292E;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 601px) {
+  .btn-more {
+    transition: all ease-in-out 0.3s;
+  }
+  .btn-more:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-prev {
+  display: block;
+  margin: 50px auto 0;
+  font-size: 1.4rem;
+  color: #24292E;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 601px) {
+  .btn-prev {
+    transition: all ease-in-out 0.3s;
+  }
+  .btn-prev:hover {
+    opacity: 0.6;
+  }
+}
+
+.wpcf7-submit {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding: 15px 0;
+  background-color: #24292E;
+  color: #fff;
+  font-size: 1.4rem;
+  border: solid 1px #24292E;
+}
+@media screen and (min-width: 601px) {
+  .wpcf7-submit {
+    transition: all ease-in-out 0.3s;
+  }
+  .wpcf7-submit:hover {
+    background-color: #fff;
+    color: #24292E;
+  }
+}
